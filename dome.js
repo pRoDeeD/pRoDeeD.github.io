@@ -39,12 +39,12 @@ var sites = {
 			};
 
 var search = { // Query variable name is q, hardcoded, looks like a standard already anyways
-				"default": "https://www.google.com/",
+				"default": "https://duckduckgo.com/",
 				"g": "https://google.com/search",
 				"s": "https://startpage.com/do/search",
 				"r": "https://reddit.com/search"
 			};
-						
+
 // ---------- BUILD PAGE ----------
 var pivotmatch = 0;
 var totallinks = 0;
