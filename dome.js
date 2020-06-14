@@ -41,7 +41,8 @@ var sites = {
 				"Development": {
 					"GitHub"				: "https://github.com/",
 					"CodePen"				: "https://codepen.io/",
-					"LeetCode"				: "https://leetcode.com/"
+					"LeetCode"				: "https://leetcode.com/",
+					"Favicon Generator"		: "https://realfavicongenerator.net/"
 				},
 				"E-Mail": {
 					"GMail"					: "https://mail.google.com/mail/u/0/",
