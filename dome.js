@@ -37,8 +37,8 @@ var sites = {
 				}
 			};
 
-var search = { // Query variable name is q, hardcoded, looks like a standard already anyways
-				"default": "https://google.com/search",
+			var search = { // Query variable name is q, hardcoded, looks like a standard already anyways
+				"default": "https://duckduckgo.com/",
 				"g": "https://google.com/search",
 				"s": "https://startpage.com/do/search",
 				"r": "https://reddit.com/search"
@@ -59,7 +59,7 @@ function matchLinks(regex = prevregexp) {
 	}
 	if (regex.charAt(1) == ' ' && search.hasOwnProperty(regex.charAt(0))) {
 		document.getElementById("action").action = search[regex.charAt(0)];
-		document.getElementById("action").children[0].name = "g";
+		document.getElementById("action").children[0].name = "q";
 	} else {
 		match = new RegExp(regex ? regex : ".", "i");
 		gmatches = false; // kinda ugly, rethink
@@ -93,7 +93,7 @@ function matchLinks(regex = prevregexp) {
 		}
 		if (!gmatches || regex == "") {
 			document.getElementById("action").action = search["default"];
-			document.getElementById("action").children[0].name = "g";
+			document.getElementById("action").children[0].name = "q";
 		}
 	}
 	document.getElementById("main").style.height = document.getElementById("main").children[0].offsetHeight+"px";
