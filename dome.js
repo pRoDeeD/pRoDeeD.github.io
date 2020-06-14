@@ -44,7 +44,7 @@ var search = { // Query variable name is q, hardcoded, looks like a standard alr
 				"s": "https://startpage.com/do/search",
 				"r": "https://reddit.com/search"
 			};
-
+						
 // ---------- BUILD PAGE ----------
 var pivotmatch = 0;
 var totallinks = 0;
