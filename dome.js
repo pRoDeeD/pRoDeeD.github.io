@@ -18,7 +18,6 @@ var sites = {
 				},
 				"General Utility": { // To find the game ID check the url in the store page or the community page
 					//LastPass not working
-					"LastPass"				: "moz-extension://b357cc1a-7e23-4b61-a523-299e360ca220/vault.html",
 					"LAN Management"		: "http://192.168.1.1",
 					"Google Drive"			: "https://drive.google.com/drive",
 					"PC PartPicker"			: "https://pcpartpicker.com/"
