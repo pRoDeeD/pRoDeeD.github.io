@@ -17,7 +17,7 @@
 html, body {
 	font-family: Montserrat;
 	overflow-x: hidden;
-	background-image: url(Train-Rain-BG.gif) no-repeat;
+	background-image: url(Train-Rain-BG.gif);
 }
 
 div#wiper {
