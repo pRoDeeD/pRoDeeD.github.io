@@ -2,7 +2,7 @@ var sites = {
 				"Entertainment": {
 					"YouTube"				: "https://www.youtube.com/",
 					"HBO"					: "https://dk.hbonordic.com",
-					"Netflix"				: "https://www.netflix.com/"
+					"Netflix"				: "https://www.netflix.com/",
 					"9anime"				: "https://9anime.ru/"
 				},
 				"MouseMods": {
@@ -21,7 +21,7 @@ var sites = {
 					//LastPass not working
 					"Flaticon"				: "https://www.flaticon.com",
 					"Google Drive"				: "https://drive.google.com/drive",
-					"Image Search"				: "https://yandex.com/images/"
+					"Image Search"				: "https://yandex.com/images/",
 					"Adobe Images"				: "https://stock.adobe.com/dk/",
 					"PNG EGG"				: "https://www.pngegg.com"
 
@@ -44,7 +44,8 @@ var sites = {
 				"default": "https://duckduckgo.com/",
 				"g": "https://google.com/search",
 				"s": "https://startpage.com/do/search",
-				"r": "https://reddit.com/search"
+				"r": "https://reddit.com/search",
+				"a": "https://stock.adobe.com/dk/search"
 			};
 
 // ---------- BUILD PAGE ----------
