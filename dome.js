@@ -1,41 +1,38 @@
 var sites = {
 				"Entertainment": {
 					"YouTube"				: "https://www.youtube.com/",
-					"HBO"					: "https://dk.hbonordic.com",
+					"Crunchyroll"			: "https://www.crunchyroll.com/en-gb",
 					"Netflix"				: "https://www.netflix.com/"
-					"9anime"				: "https://9anime.ru/"
 				},
-				"MouseMods": {
-					"MouseMods.EU"				: "https://www.mousemods.eu/",
-					"MouseMods.US"				: "https://www.mousemods.us/",
-					"Shopify"				: "https://mousemods.myshopify.com/",
-					"Mailerlite"				: "https://app.mailerlite.com/"
+				"Development": {
+					"GitHub"				: "https://github.com/",
+					"CodePen"				: "https://codepen.io/",
+					"LeetCode"				: "https://leetcode.com/",
+					"Favicon Generator"		: "https://realfavicongenerator.net/"
 				},
 				"E-Mail": {
-					"GMail"					: "https://accounts.google.com/AccountChooser/signinchooser?flowName=GlifWebSignIn&flowEntry=AccountChooser",
-					"Alibaba"				: "https://message.alibaba.com/message/messenger.htm#/",
-					"Aliexpress"				: "https://msg.aliexpress.com/?spm=a2g0o.best.1000001.32.72ad2c25Wb8zuM&tracelog=ws_topbar",
-					"10 Minute Mail"			: "https://10minutemail.com/"
+					"GMail"					: "https://mail.google.com/mail/u/0/",
+					"Private Email"			: "https://privateemail.com/appsuite/",
+					"Outlook"				: "https://outlook.office.com/",
+					"10 Minute Mail"		: "https://10minutemail.com/"
 				},
 				"General Utility": { // To find the game ID check the url in the store page or the community page
 					//LastPass not working
-					"Flaticon"				: "https://www.flaticon.com",
-					"Google Drive"				: "https://drive.google.com/drive",
-					"Image Search"				: "https://yandex.com/images/"
-					"Adobe Images"				: "https://stock.adobe.com/dk/",
-					"PNG EGG"				: "https://www.pngegg.com"
+					"LAN Management"		: "http://192.168.1.1",
+					"Google Drive"			: "https://drive.google.com/drive",
+					"PC PartPicker"			: "https://pcpartpicker.com/"
 
 				},
 				"Read The Docs": {
 					"MDN"					: "https://developer.mozilla.org",
-					"StackOverFlow"				: "https://stackoverflow.com/",
-					"W3 Schools"				: "https://www.w3schools.com/",
-					"CSS Tricks"				: "https://css-tricks.com/"
+					"StackOverFlow"			: "https://stackoverflow.com/",
+					"W3 Schools"			: "https://www.w3schools.com/",
+					"CSS Tricks"			: "https://css-tricks.com/"
 				},
 				"Social": {
 					"Reddit"				: "https://www.reddit.com/",
-					"Instagram"				: "https://www.instagram.com/",
-					"Twitter"				: "https://www.twitter.com/",
+					"Discord"				: "https://discord.com/app",
+					"LinkedIn"				: "https://www.linkedin.com/in/",
 					"Facebook"				: "https://www.facebook.com/messages"
 				}
 			};
