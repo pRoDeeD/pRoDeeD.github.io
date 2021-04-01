@@ -1,38 +1,41 @@
 var sites = {
 				"Entertainment": {
 					"YouTube"				: "https://www.youtube.com/",
-					"Crunchyroll"			: "https://www.crunchyroll.com/en-gb",
+					"HBO"					: "https://dk.hbonordic.com",
 					"Netflix"				: "https://www.netflix.com/"
+					"9anime"				: "https://9anime.ru/"
 				},
-				"Development": {
-					"GitHub"				: "https://github.com/",
-					"CodePen"				: "https://codepen.io/",
-					"LeetCode"				: "https://leetcode.com/",
-					"Favicon Generator"		: "https://realfavicongenerator.net/"
+				"MouseMods": {
+					"MouseMods.EU"				: "https://www.mousemods.eu/",
+					"MouseMods.US"				: "https://www.mousemods.us/",
+					"Shopify"				: "https://mousemods.myshopify.com/",
+					"Mailerlite"				: "https://app.mailerlite.com/"
 				},
 				"E-Mail": {
-					"GMail"					: "https://mail.google.com/mail/u/0/",
-					"Private Email"			: "https://privateemail.com/appsuite/",
-					"Outlook"				: "https://outlook.office.com/",
-					"10 Minute Mail"		: "https://10minutemail.com/"
+					"GMail"					: "https://accounts.google.com/AccountChooser/signinchooser?flowName=GlifWebSignIn&flowEntry=AccountChooser",
+					"Alibaba"				: "https://message.alibaba.com/message/messenger.htm#/",
+					"Aliexpress"				: "https://msg.aliexpress.com/?spm=a2g0o.best.1000001.32.72ad2c25Wb8zuM&tracelog=ws_topbar",
+					"10 Minute Mail"			: "https://10minutemail.com/"
 				},
 				"General Utility": { // To find the game ID check the url in the store page or the community page
 					//LastPass not working
-					"LAN Management"		: "http://192.168.1.1",
-					"Google Drive"			: "https://drive.google.com/drive",
-					"PC PartPicker"			: "https://pcpartpicker.com/"
+					"Flaticon"				: "https://www.flaticon.com",
+					"Google Drive"				: "https://drive.google.com/drive",
+					"Image Search"				: "https://yandex.com/images/"
+					"Adobe Images"				: "https://stock.adobe.com/dk/",
+					"PNG EGG"				: "https://www.pngegg.com"
 
 				},
 				"Read The Docs": {
 					"MDN"					: "https://developer.mozilla.org",
-					"StackOverFlow"			: "https://stackoverflow.com/",
-					"W3 Schools"			: "https://www.w3schools.com/",
-					"CSS Tricks"			: "https://css-tricks.com/"
+					"StackOverFlow"				: "https://stackoverflow.com/",
+					"W3 Schools"				: "https://www.w3schools.com/",
+					"CSS Tricks"				: "https://css-tricks.com/"
 				},
 				"Social": {
 					"Reddit"				: "https://www.reddit.com/",
-					"Discord"				: "https://discord.com/app",
-					"LinkedIn"				: "https://www.linkedin.com/in/",
+					"Instagram"				: "https://www.instagram.com/",
+					"Twitter"				: "https://www.twitter.com/",
 					"Facebook"				: "https://www.facebook.com/messages"
 				}
 			};
@@ -95,47 +98,4 @@ function matchLinks(regex = prevregexp) {
 			document.getElementById("action").action = search["default"];
 			document.getElementById("action").children[0].name = "q";
 		}
-	}
-	document.getElementById("main").style.height = document.getElementById("main").children[0].offsetHeight+"px";
-}
-
-document.onkeydown = function(e) {
-	switch (e.keyCode) {
-		case 38:
-			pivotmatch = pivotmatch >= 0 ? 0 : pivotmatch + 1;
-			matchLinks();
-			break;
-		case 40:
-			pivotmatch = pivotmatch <= -totallinks + 1 ? -totallinks + 1 : pivotmatch - 1;
-			matchLinks();
-			break;
-		default:
-			break;
-	}
-	document.getElementById("action").children[0].focus();
-}
-
-document.getElementById("action").children[0].onkeypress = function(e) {
-	if (e.key == "ArrowDown" || e.key == "ArrowUp") {
-		return false;
-	}
-}
-
-function displayClock() {
-	now = new Date();
-	clock = (now.getHours() < 10 ? "0"+now.getHours() : now.getHours())+":"
-			+(now.getMinutes() < 10 ? "0"+now.getMinutes() : now.getMinutes())+":"
-			+(now.getSeconds() < 10 ? "0"+now.getSeconds() : now.getSeconds());
-	document.getElementById("clock").innerHTML = clock;
-}
-
-window.onload = matchLinks();
-document.getElementById("action").onsubmit = function() {
-	svalue = this.children[0].value;
-	if (svalue.charAt(1) == ' ' && search.hasOwnProperty(svalue.charAt(0))) {
-		this.children[0].value = svalue.substring(2);
-	}
-	return true;
-}
-displayClock();
-setInterval(displayClock, 1000);
+... (44 lines left)
