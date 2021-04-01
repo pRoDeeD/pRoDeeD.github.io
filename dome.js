@@ -23,6 +23,7 @@ var sites = {
 					"Google Drive"				: "https://drive.google.com/drive",
 					"Image Search"				: "https://yandex.com/images/",
 					"Adobe Images"				: "https://stock.adobe.com/dk/",
+					"Icon Search"				: "https://thenounproject.com/",
 					"PNG EGG"				: "https://www.pngegg.com"
 
 				},
@@ -45,6 +46,7 @@ var sites = {
 				"g": "https://google.com/search",
 				"s": "https://startpage.com/do/search",
 				"r": "https://reddit.com/search",
+				"y": "https://youtube.com/search",
 				"a": "https://stock.adobe.com/dk/search"
 			};
 
