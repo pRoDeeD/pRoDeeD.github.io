@@ -19,19 +19,18 @@ var sites = {
 				},
 				"General Utility": { // To find the game ID check the url in the store page or the community page
 					//LastPass not working
-					"Flaticon"				: "https://www.flaticon.com",
 					"Google Drive"				: "https://drive.google.com/drive",
+					
+
+				},
+				"Image Seach": {
+					"Flaticon"				: "https://www.flaticon.com",
 					"Image Search"				: "https://yandex.com/images/",
 					"Adobe Images"				: "https://stock.adobe.com/dk/",
 					"Icon Search"				: "https://thenounproject.com/",
-					"PNG EGG"				: "https://www.pngegg.com"
-
-				},
-				"Read The Docs": {
-					"MDN"					: "https://developer.mozilla.org",
-					"StackOverFlow"				: "https://stackoverflow.com/",
-					"W3 Schools"				: "https://www.w3schools.com/",
-					"CSS Tricks"				: "https://css-tricks.com/"
+					"Mockups"				: "https://mockups-design.com/",
+					"PNG EGG"				: "https://www.pngegg.com/"
+					
 				},
 				"Social": {
 					"Reddit"				: "https://www.reddit.com/",
