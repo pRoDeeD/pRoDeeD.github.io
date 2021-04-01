@@ -98,4 +98,47 @@ function matchLinks(regex = prevregexp) {
 			document.getElementById("action").action = search["default"];
 			document.getElementById("action").children[0].name = "q";
 		}
-... (44 lines left)
+	}
+	document.getElementById("main").style.height = document.getElementById("main").children[0].offsetHeight+"px";
+}
+
+document.onkeydown = function(e) {
+	switch (e.keyCode) {
+		case 38:
+			pivotmatch = pivotmatch >= 0 ? 0 : pivotmatch + 1;
+			matchLinks();
+			break;
+		case 40:
+			pivotmatch = pivotmatch <= -totallinks + 1 ? -totallinks + 1 : pivotmatch - 1;
+			matchLinks();
+			break;
+		default:
+			break;
+	}
+	document.getElementById("action").children[0].focus();
+}
+
+document.getElementById("action").children[0].onkeypress = function(e) {
+	if (e.key == "ArrowDown" || e.key == "ArrowUp") {
+		return false;
+	}
+}
+
+function displayClock() {
+	now = new Date();
+	clock = (now.getHours() < 10 ? "0"+now.getHours() : now.getHours())+":"
+			+(now.getMinutes() < 10 ? "0"+now.getMinutes() : now.getMinutes())+":"
+			+(now.getSeconds() < 10 ? "0"+now.getSeconds() : now.getSeconds());
+	document.getElementById("clock").innerHTML = clock;
+}
+
+window.onload = matchLinks();
+document.getElementById("action").onsubmit = function() {
+	svalue = this.children[0].value;
+	if (svalue.charAt(1) == ' ' && search.hasOwnProperty(svalue.charAt(0))) {
+		this.children[0].value = svalue.substring(2);
+	}
+	return true;
+}
+displayClock();
+setInterval(displayClock, 1000);
