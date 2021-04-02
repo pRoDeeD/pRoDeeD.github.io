@@ -46,7 +46,7 @@ var sites = {
 				"s": "https://startpage.com/do/search",
 				"r": "https://reddit.com/search",
 				"y": "https://youtube.com/search",
-				"a": "https://stock.adobe.com/dk/search?filters%5Bcontent_type%3Aphoto%5D=1&filters%5Bcontent_type%3Aillustration%5D=1&filters%5Bcontent_type%3Azip_vector%5D=1&filters%5Bcontent_type%3Avideo%5D=1&filters%5Bcontent_type%3Atemplate%5D=1&filters%5Bcontent_type%3A3d%5D=1&filters%5Bcontent_type%3Aimage%5D=1&order=relevance&safe_search=1&k=DANIEL&limit=100&search_page=1&search_type=usertyped&acp=&aco=DANIEL"
+				"a": "https://stock.adobe.com/search"
 			};
 
 // ---------- BUILD PAGE ----------
