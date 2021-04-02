@@ -41,8 +41,7 @@ var sites = {
 			};
 
 			var search = { // Query variable name is q, hardcoded, looks like a standard already anyways
-				"default": "https://duckduckgo.com/",
-				"g": "https://google.com/search",
+				"default": "https://google.com/search",
 				"s": "https://startpage.com/do/search",
 				"r": "https://reddit.com/search",
 				"y": "https://youtube.com/search",
