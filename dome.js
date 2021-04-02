@@ -46,7 +46,7 @@ var sites = {
 				"s": "https://startpage.com/do/search",
 				"r": "https://reddit.com/search",
 				"y": "https://youtube.com/search",
-				"a": "https://stock.adobe.com/dk/search"
+				"a": "https://stock.adobe.com/dk/search?q="
 			};
 
 // ---------- BUILD PAGE ----------
