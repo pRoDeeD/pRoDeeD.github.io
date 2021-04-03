@@ -20,6 +20,7 @@ var sites = {
 				"General Utility": { // To find the game ID check the url in the store page or the community page
 					//LastPass not working
 					"Google Drive"				: "https://drive.google.com/drive",
+					"Google Docs"				: "https://docs.google.com/document/u/0/",
 					
 
 				},
