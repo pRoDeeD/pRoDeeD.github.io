@@ -1,6 +1,6 @@
 var sites = {
 				"Entertainment": {
-					"YouTube"				: "https://www.youtube.com/",
+					"YouTube (y)"				: "https://www.youtube.com/",
 					"HBO"					: "https://dk.hbonordic.com",
 					"Netflix"				: "https://www.netflix.com/",
 					"9anime"				: "https://9anime.ru/"
@@ -20,21 +20,22 @@ var sites = {
 				"General Utility": { // To find the game ID check the url in the store page or the community page
 					//LastPass not working
 					"Google Drive"				: "https://drive.google.com/drive",
-					"Google Docs"				: "https://docs.google.com/document/u/0/",
+					"Google Docs"				: "https://docs.google.com/document",
+					"Google Sheets"				: "https://docs.google.com/spreadsheets"
 					
 
 				},
-				"Image Seach": {
+				"Search": {
 					"Flaticon"				: "https://www.flaticon.com",
 					"Image Search"				: "https://yandex.com/images/",
-					"Adobe Images"				: "https://stock.adobe.com/dk/",
+					"Adobe Images (a)"			: "https://stock.adobe.com/dk/",
 					"Icon Search"				: "https://thenounproject.com/",
 					"Mockups"				: "https://mockups-design.com/",
 					"PNG EGG"				: "https://www.pngegg.com/"
 					
 				},
 				"Social": {
-					"Reddit"				: "https://www.reddit.com/",
+					"Reddit (r)"				: "https://www.reddit.com/",
 					"Instagram"				: "https://www.instagram.com/",
 					"Twitter"				: "https://www.twitter.com/",
 					"Facebook"				: "https://www.facebook.com/messages"
@@ -47,6 +48,7 @@ var sites = {
 				"r": "https://reddit.com/search",
 				"y": "https://youtube.com/search",
 				"a": "https://stock.adobe.com/dk/search?load_type=search&is_recent_search=&search_type=usertyped&k=%s&native_visual_search=&similar_content_id="
+				"t": "https://translate.google.com/?hl=da",
 			};
 
 // ---------- BUILD PAGE ----------
