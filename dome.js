@@ -47,8 +47,8 @@ var sites = {
 				"s": "https://startpage.com/do/search",
 				"r": "https://reddit.com/search",
 				"y": "https://youtube.com/search",
-				"a": "https://stock.adobe.com/dk/search?load_type=search&is_recent_search=&search_type=usertyped&k=%s&native_visual_search=&similar_content_id="
-				"t": "https://translate.google.com/?hl=da",
+				"a": "https://stock.adobe.com/dk/search?load_type=search&is_recent_search=&search_type=usertyped&k=%s&native_visual_search=&similar_content_id=",
+				"t": "https://translate.google.com/?hl=da"
 			};
 
 // ---------- BUILD PAGE ----------
