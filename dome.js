@@ -12,16 +12,17 @@ var sites = {
 					"Mailerlite"				: "https://app.mailerlite.com/"
 				},
 				"E-Mail": {
-					"GMail"					: "https://accounts.google.com/AccountChooser/signinchooser?flowName=GlifWebSignIn&flowEntry=AccountChooser",
+					"GMail"					: "mail.google.com/mail/u/0/#inbox",
 					"Alibaba"				: "https://message.alibaba.com/message/messenger.htm#/",
 					"Aliexpress"				: "https://msg.aliexpress.com/?spm=a2g0o.best.1000001.32.72ad2c25Wb8zuM&tracelog=ws_topbar",
 					"10 Minute Mail"			: "https://10minutemail.com/"
 				},
 				"General Utility": { // To find the game ID check the url in the store page or the community page
 					//LastPass not working
-					"Google Drive"				: "https://drive.google.com/drive",
-					"Google Docs"				: "https://docs.google.com/document",
-					"Google Sheets"				: "https://docs.google.com/spreadsheets"
+					"Google Drive"				: "https://drive.google.com/drive/",
+					"Google Docs"				: "https://docs.google.com/document/",
+					"Google Sheets"				: "https://docs.google.com/spreadsheets/"
+					"Google Forms"				: "https://docs.google.com/forms/"
 					
 
 				},
