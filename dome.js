@@ -21,7 +21,7 @@ var sites = {
 					//LastPass not working
 					"Google Drive"				: "https://drive.google.com/drive/",
 					"Google Docs"				: "https://docs.google.com/document/",
-					"Google Sheets"				: "https://docs.google.com/spreadsheets/"
+					"Google Sheets"				: "https://docs.google.com/spreadsheets/",
 					"Google Forms"				: "https://docs.google.com/forms/"
 					
 
