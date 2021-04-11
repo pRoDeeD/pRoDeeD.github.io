@@ -48,7 +48,8 @@ var search = {
   s: 'https://startpage.com/do/search',
   r: 'https://reddit.com/search',
   y: 'https://youtube.com/search',
-  a: 'https://stock.adobe.com/',
+  a:
+    'https://stock.adobe.com/search?load_type=search&native_visual_search=&similar_content_id=&is_recent_search=&search_type=usertyped&',
   t: 'https://translate.google.com/?hl=da',
 };
 
