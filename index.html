@@ -1,73 +1,96 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Welcome, Daniel</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" type="text/css" href="style.css">
-		<!-- Favicon Stuff -->
-		<link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
-		<link rel="manifest" href="/images/favicons/site.webmanifest">
-		<link rel="mask-icon" href="/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
-		<meta name="msapplication-TileColor" content="#da532c">
-		<meta name="theme-color" content="#ffffff">
-		<!-- end Favicon Stuff -->
-		<script src="dome.js" defer></script>
-		<style type="text/css">
-			body > div#main > span > div#static_links {
-				height: 30px;
-			}
-			body > div#main > span > form > input {
-				border: none;
-				height: 50px;
-			}
-			div#links > div.section {
-				display: inline-block;
-				vertical-align: top;
-				height: 200px;
-				width: 300px;
-				margin: 2px;
-			}
-			div#links > div.section > div {
-				padding: 15px;
-			}
-			div#wiper {
-				display: block;
-				position: fixed;
-				width: 100vw;
-				height: 100vh;
-				background-color: #121B18;
-				opacity: 1;
-				z-index: 100;
-				transition: .5s opacity .5s, .5s z-index .5s;
-			}
-			html, body {
-				margin: 0;
-				background-color: #121B18;
-			}
-		</style>
-	</head>
-	<body onresize="matchLinks()" onunload="">
-		<div id="wiper"></div>
-		<div id="main" style="max-width: 912px;">
-			<span style="display: block">
-				<div id="static_links">
-					<span id="clock">
-						<!-- dome.js: displayDate() fills this element -->
-					</span>
-					<!--This doesn't work in a new tab for some reason, kind of a stupid button anyways.-->
-					<a href="mailto:" target="_blank">Compose E-Mail</a>
-					<a href="steam:">Open Steam</a>
-				</div>
-				<form method="GET" id="action">
-					<input type="text" oninput="matchLinks(this.value)" autofocus autocomplete="off">
-				</form>
-				<div id="links">
-					<!-- dome.js: matchLinks() fills this element -->
-				</div>
-			</span>
-		</div>
-	</body>
+  <head>
+    <title>Welcome, Daniel</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- Favicon Stuff -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/images/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/images/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/images/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/images/favicons/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="/images/favicons/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- end Favicon Stuff -->
+    <script src="dome.js" defer></script>
+    <style type="text/css">
+      body > div#main > span > div#static_links {
+        height: 30px;
+      }
+      body > div#main > span > form > input {
+        border: none;
+        height: 50px;
+      }
+      div#links > div.section {
+        display: inline-block;
+        vertical-align: top;
+        height: 200px;
+        width: 300px;
+        margin: 2px;
+      }
+      div#links > div.section > div {
+        padding: 15px;
+      }
+      div#wiper {
+        display: block;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background-color: #121b18;
+        opacity: 1;
+        z-index: 100;
+        transition: 0.5s opacity 0.5s, 0.5s z-index 0.5s;
+      }
+      html,
+      body {
+        margin: 0;
+        background-color: #121b18;
+      }
+    </style>
+  </head>
+  <body onresize="matchLinks()" onunload="">
+    <div id="wiper"></div>
+    <div id="main" style="max-width: 912px">
+      <span style="display: block">
+        <div id="static_links">
+          <span id="clock">
+            <!-- dome.js: displayDate() fills this element -->
+          </span>
+          <!--This doesn't work in a new tab for some reason, kind of a stupid button anyways.-->
+          <a href="mailto:" target="_blank">Compose E-Mail</a>
+          <a href="steam:">Open Steam</a>
+        </div>
+        <form method="GET" id="action">
+          <input
+            type="text"
+            oninput="matchLinks(this.value)"
+            autocomplete="off"
+          />
+        </form>
+        <div id="links">
+          <!-- dome.js: matchLinks() fills this element -->
+        </div>
+      </span>
+    </div>
+  </body>
 </html>
