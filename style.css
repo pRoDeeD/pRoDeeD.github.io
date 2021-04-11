@@ -19,8 +19,7 @@ body {
   font-family: Montserrat;
   overflow-x: hidden;
   /*This is still repeating, need to fix.*/
-  background-image: url(BG.jpg
-);
+  background-image: url(Train-Rain-BG.gif);
   background-size: cover;
   background-repeat: no-repeat;
 }
