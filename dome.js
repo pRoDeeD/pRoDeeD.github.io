@@ -1,20 +1,20 @@
 var sites = {
-  Entertainment: {
+  'Entertainment': {
     'YouTube (y)': 'https://www.youtube.com/',
-    HBO: 'https://dk.hbonordic.com',
-    Netflix: 'https://www.netflix.com/',
+    'HBO': 'https://dk.hbonordic.com',
+    'Netflix': 'https://www.netflix.com/',
     '9anime': 'https://9anime.ru/',
   },
-  MouseMods: {
+  'MouseMods': {
     'MouseMods.EU': 'https://www.mousemods.eu/',
     'MouseMods.US': 'https://www.mousemods.us/',
-    Shopify: 'https://mousemods.myshopify.com/',
-    Mailerlite: 'https://app.mailerlite.com/',
+    'Shopify': 'https://mousemods.myshopify.com/',
+    'Mailerlite': 'https://app.mailerlite.com/',
   },
   'E-Mail': {
-    GMail: 'https://mail.google.com/mail/u/0/',
-    Alibaba: 'https://message.alibaba.com/message/messenger.htm#/',
-    Aliexpress:
+    'GMail': 'mail.google.com/mail/u/0/#inbox',
+    'Alibaba': 'https://message.alibaba.com/message/messenger.htm#/',
+    'Aliexpress':
       'https://msg.aliexpress.com/?spm=a2g0o.best.1000001.32.72ad2c25Wb8zuM&tracelog=ws_topbar',
     '10 Minute Mail': 'https://10minutemail.com/',
   },
@@ -26,19 +26,19 @@ var sites = {
     'Google Sheets': 'https://docs.google.com/spreadsheets/',
     'Google Forms': 'https://docs.google.com/forms/',
   },
-  Search: {
-    Flaticon: 'https://www.flaticon.com',
+  'Search': {
+    'Flaticon': 'https://www.flaticon.com',
     'Image Search': 'https://yandex.com/images/',
     'Adobe Images (a)': 'https://stock.adobe.com/dk/',
     'Icon Search': 'https://thenounproject.com/',
-    Mockups: 'https://mockups-design.com/',
+    'Mockups': 'https://mockups-design.com/',
     'PNG EGG': 'https://www.pngegg.com/',
   },
-  Social: {
+  'Social': {
     'Reddit (r)': 'https://www.reddit.com/',
-    Instagram: 'https://www.instagram.com/',
-    Twitter: 'https://www.twitter.com/',
-    Facebook: 'https://www.facebook.com/messages',
+    'Instagram': 'https://www.instagram.com/',
+    'Twitter': 'https://www.twitter.com/',
+    'Facebook': 'https://www.facebook.com/messages',
   },
 };
 
