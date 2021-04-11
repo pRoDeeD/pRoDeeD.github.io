@@ -48,9 +48,10 @@ var search = {
   s: 'https://startpage.com/do/search',
   r: 'https://reddit.com/search',
   y: 'https://youtube.com/search',
-  a:
-    'https://stock.adobe.com/search?load_type=search&native_visual_search=&similar_content_id=&is_recent_search=&search_type=usertyped&',
   t: 'https://translate.google.com/?hl=da',
+};
+var adobeSearch = {
+  a: 'https://stock.adobe.com/search?',
 };
 
 // ---------- BUILD PAGE ----------
@@ -111,6 +112,60 @@ function matchLinks(regex = prevregexp) {
     document.getElementById('main').children[0].offsetHeight + 'px';
 }
 
+function matchLinks(regex = prevregexp) {
+  totallinks = 0;
+  pivotmatch = regex == prevregexp ? pivotmatch : 0;
+  prevregexp = regex;
+  pivotbuffer = pivotmatch;
+  p = document.getElementById('links');
+  while (p.firstChild) {
+    p.removeChild(p.firstChild);
+  }
+  if (regex.charAt(1) == ' ' && adobeSearch.hasOwnProperty(regex.charAt(0))) {
+    document.getElementById('action').action = adobeSearch[regex.charAt(0)];
+    document.getElementById('action').children[0].name = 'k';
+  } else {
+    match = new RegExp(regex ? regex : '.', 'i');
+    gmatches = false; // kinda ugly, rethink
+    for (i = 0; i < Object.keys(sites).length; i++) {
+      matches = false;
+      sn = Object.keys(sites)[i];
+      section = document.createElement('div');
+      section.id = sn;
+      section.innerHTML = sn;
+      section.className = 'section';
+      inner = document.createElement('div');
+      for (l = 0; l < Object.keys(sites[sn]).length; l++) {
+        ln = Object.keys(sites[sn])[l];
+        if (match.test(ln)) {
+          link = document.createElement('a');
+          link.href = sites[sn][ln];
+          link.innerHTML = ln;
+          if (!pivotbuffer++ && regex != '') {
+            link.className = 'selected';
+            document.getElementById('action').action = sites[sn][ln];
+            document
+              .getElementById('action')
+              .children[0].removeAttribute('name');
+          }
+          inner.appendChild(link);
+          matches = true;
+          gmatches = true;
+          totallinks++;
+        }
+      }
+      section.appendChild(inner);
+      matches ? p.appendChild(section) : false;
+    }
+    if (!gmatches || regex == '') {
+      document.getElementById('action').action = adobeSearch['default'];
+      document.getElementById('action').children[0].name = 'q';
+    }
+  }
+  document.getElementById('main').style.height =
+    document.getElementById('main').children[0].offsetHeight + 'px';
+}
+
 document.onkeydown = function (e) {
   switch (e.keyCode) {
     case 38:
@@ -148,7 +203,12 @@ function displayClock() {
 window.onload = matchLinks();
 document.getElementById('action').onsubmit = function () {
   svalue = this.children[0].value;
-  if (svalue.charAt(1) == ' ' && search.hasOwnProperty(svalue.charAt(0))) {
+  if (
+    svalue.charAt(1) == ' ' &&
+    search.hasOwnProperty(
+      svalue.charAt(0) && adobeSearch.hasOwnProperty(svalue.charAt(0))
+    )
+  ) {
     this.children[0].value = svalue.substring(2);
   }
   return true;
