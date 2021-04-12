@@ -19,9 +19,12 @@ body {
   font-family: Montserrat;
   overflow-x: hidden;
   /*This is still repeating, need to fix.*/
-  background-image: url(Train-Rain-BG.gif);
-  background-size: cover;
-  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.background {
+  height: 100vh;
+  width: 100vw;
 }
 
 div#wiper {
@@ -127,7 +130,7 @@ div#links > div.section {
 }
 
 div#links > div.section:before {
-  content: '';
+  content: "";
   margin-left: 5px;
 }
 
