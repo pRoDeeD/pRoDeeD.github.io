@@ -12,7 +12,7 @@ var sites = {
     "Mailerlite" : "https://app.mailerlite.com/",
   },
   "E-Mail": {
-    "GMail" : "mail.google.com/mail/u/0/",
+    "GMail" : "https://mail.google.com/mail/u/0/",
     "Alibaba" : "https://message.alibaba.com/message/messenger.htm#/",
     "Aliexpress" : "https://msg.aliexpress.com/?spm=a2g0o.best.1000001.32.72ad2c25Wb8zuM&tracelog=ws_topbar",
     "10 Minute Mail" : "https://10minutemail.com/",
